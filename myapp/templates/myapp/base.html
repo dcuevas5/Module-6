@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>{% block title %}My Site{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'myapp/style.css' %}">
+
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Django Site</h1>
+    </header>
+
+    <main>
+        {% block content %}
+        <!-- Aquí irá el contenido de cada página -->
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Site. All rights reserved.</p>
+    </footer>
+</body>
+</html>
